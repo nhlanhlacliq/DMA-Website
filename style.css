@@ -11,7 +11,7 @@ body {
   height: 99vh;
 }
 .home {
-  background-image: radial-gradient(at top left, #12191e 0%, #000000 55%);
+  /* background-image: radial-gradient(at top left, #fff 0%, #f1f1f1 55%); */
 }
 .max-width {
   max-width: 100%;
@@ -28,7 +28,7 @@ body {
     font-family: "Ubuntu", sans-serif;
     transition: all 0.3s ease;
     z-index: 1;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.9);
     mix-blend-mode: difference;
     backdrop-filter: blur(10px);
   }
@@ -36,11 +36,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 66%;
   }
   .navigation .logo a img {
     height: 123px;
     color: #fff;
-    mix-blend-mode: difference;
+    /* mix-blend-mode: difference; */
   }
   .navigation .menu li {
     list-style: none;
@@ -63,9 +64,9 @@ body {
 /* Home section ====================================================================*/
 .home {
     display: flex;
-    background: url("images/Nhlanhla.png") top no-repeat,
+    background: url("images/chad-kirchoff-xe-e69j6-Ds-unsplash.jpg") top no-repeat,
       radial-gradient(at top left, #12191e 0%, #000000 55%);
-    background-attachment: scroll;
+    background-attachment: fixed;
     height: 100vh;
     background-size: cover;
     color: #ffffff;
