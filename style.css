@@ -95,8 +95,6 @@ body {
     margin: 0px;
     color: #ffffff;
   }.home .home-content .text h1 span {
-    font-weight: bold;
-    margin: 0px;
     color: #ff2525;
   }
   .home .home-content .text p {
@@ -112,19 +110,19 @@ body {
   
   @keyframes heartFadeInOut {
     0% {transform: scale(1);}
-    25% {color: white; border: 2px solid pink;}
-    35% {transform: scale(0.998); color: #FFE0E5; border: 2px solid #FFE0E5;}
-    45% {transform: scale(1.002); color: #ff2525; border: 2px solid #ff2525;}
-    55% {transform: scale(0.998); color: pink; border: 2px solid pink;}
-    65% {transform: scale(1.002); color: #ff2525; border: 2px solid #ff2525;}
-    75% {color: #FFE0E5; border: 2px solid #FFE0E5;}
-    100% {transform: scale(1); color: white; border: 2px solid white;}
+    25% {color: white; border: 3px solid pink;}
+    35% {transform: scale(0.998); color: #FFE0E5; border: 3px solid #FFE0E5;}
+    45% {transform: scale(1.002); color: #ff2525; border: 3px solid #ff2525;}
+    55% {transform: scale(0.998); color: pink; border: 3px solid pink;}
+    65% {transform: scale(1.002); color: #ff2525; border: 3px solid #ff2525;}
+    75% {color: #FFE0E5; border: 3px solid #FFE0E5;}
+    100% {transform: scale(1); color: white; border: 3px solid white;}
   }
   
   .home .home-content .text .get-in-touch {
     /* width: 1px; */
     margin: 20px 0px 0px;
-    border: 2px solid #fdfdfd;
+    border: 3px solid #fdfdfd;
     border-radius: 50%;
     line-height: 850%;
     background-color: transparent;
@@ -132,10 +130,11 @@ body {
     font-size: 15px;
     font-weight: bolder;
     /* padding: 10px 25px; */
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     text-transform: uppercase;
     outline: none;
     text-shadow: 2px 2px 0 #000;
+    font-family: montserrat, sans-serif;
     transition: transform 80ms ease-in;
 
     animation-name: heartFadeInOut; 
