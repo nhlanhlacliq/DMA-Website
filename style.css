@@ -94,6 +94,10 @@ body {
     font-weight: bold;
     margin: 0px;
     color: #ffffff;
+  }.home .home-content .text h1 span {
+    font-weight: bold;
+    margin: 0px;
+    color: #ff2525;
   }
   .home .home-content .text p {
     /* font-family: "Ubuntu", sans-serif; */
