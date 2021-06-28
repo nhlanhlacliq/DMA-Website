@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500;600;700&display=swap");
 
 /* GLobal styling ==================================================================== */
 body {
@@ -24,22 +24,22 @@ body {
 .navigation {
     position: fixed;
     width: 100%;
-    padding: 10px 0;
+    /* padding: 10px 0; */
     font-family: "Ubuntu", sans-serif;
     transition: all 0.3s ease;
     z-index: 1;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 1);
     mix-blend-mode: difference;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(42px);
   }
   .navigation .max-width {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 66%;
+    width: 90%;
   }
   .navigation .logo a img {
-    height: 123px;
+    height: 110px;
     color: #fff;
     /* mix-blend-mode: difference; */
   }
@@ -64,24 +64,25 @@ body {
 /* Home section ====================================================================*/
 .home {
     display: flex;
-    background: url("images/chad-kirchoff-xe-e69j6-Ds-unsplash.jpg") top no-repeat,
-      radial-gradient(at top left, #12191e 0%, #000000 55%);
+    background: url("images/belts.jpg") top no-repeat;
+      /* radial-gradient(at top left, #12191e 0%, #000000 55%); */
     background-attachment: fixed;
     height: 100vh;
-    background-size: cover;
+    /* background-size: cover; */
     color: #ffffff;
     min-height: 500px;
-    font-family: "Ubuntu", sans-serif;
+    /* font-family: "Ubuntu", sans-serif; */
+    background-position: 0px -85px;
   }
   .home .max-width {
-    margin: auto 0 auto 40px;
+    margin: auto;
   }
   .home .home-content .text {
     font-size: 50px;
     font-weight: 600;
-    margin: 5px 0;
+    margin: 15% 20% 0 20%;
     left: 0px;
-    width: 55%;
+    /* width: 55%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -95,32 +96,58 @@ body {
     color: #ffffff;
   }
   .home .home-content .text p {
-    font-size: 32px;
-    font-weight: 100;
-    /* line-height: 20px; */
+    /* font-family: "Ubuntu", sans-serif; */
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
     /* letter-spacing: .5px; */
-    margin: 20px 0px 30px;
-    color: rgba(188, 188, 188, 1);
+    margin: 20px 0px 0px;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 2px 2px 0 #000, -0.1px -0.1px 0 #000
   }
-  input[type="button"] {
-    border: 1px solid #5d7f98;
-    border-radius: 12px;
+  
+  @keyframes heartFadeInOut {
+    0% {transform: scale(1);}
+    25% {color: white; border: 2px solid pink;}
+    35% {transform: scale(0.998); color: #FFE0E5; border: 2px solid #FFE0E5;}
+    45% {transform: scale(1.002); color: #ff2525; border: 2px solid #ff2525;}
+    55% {transform: scale(0.998); color: pink; border: 2px solid pink;}
+    65% {transform: scale(1.002); color: #ff2525; border: 2px solid #ff2525;}
+    75% {color: #FFE0E5; border: 2px solid #FFE0E5;}
+    100% {transform: scale(1); color: white; border: 2px solid white;}
+  }
+  
+  .home .home-content .text .get-in-touch {
+    /* width: 1px; */
+    margin: 20px 0px 0px;
+    border: 2px solid #fdfdfd;
+    border-radius: 50%;
+    line-height: 850%;
     background-color: transparent;
-    color: #5d7f98;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 10px 25px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bolder;
+    /* padding: 10px 25px; */
     letter-spacing: 1px;
     text-transform: uppercase;
     outline: none;
+    text-shadow: 2px 2px 0 #000;
     transition: transform 80ms ease-in;
+
+    animation-name: heartFadeInOut; 
+    animation-iteration-count: infinite;
+    animation-duration: 1.2s;
+    /* animation-duration: 1s; */
   }
-  input[type="button"]:active {
+
+
+  .home .home-content .text .get-in-touch:active {
     transform: scale(0.95);
   }
-  input[type="button"]:hover {
+  .home .home-content .text .get-in-touch:hover {
+    animation-name: none; 
     color: #fff;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
   }
   .social a {
     text-decoration: none;
