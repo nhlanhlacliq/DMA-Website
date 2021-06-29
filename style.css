@@ -250,8 +250,14 @@ section .title::after {
     50% {filter: drop-shadow( 4px 33px 2px rgba(0, 0, 0, .1));
         transform: translatey(-20px);}
     100% {filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, 1));
+        transform: translatey(0px);}}
+  @keyframes float-neg {
+    0% {filter: drop-shadow( 4px 33px 2px rgba(0, 0, 0, .1));
+      transform: translatey(-20px);}
+    50% {filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, 1));
         transform: translatey(0px);}
-  }
+    100% {filter: drop-shadow( 4px 33px 2px rgba(0, 0, 0, .1));
+        transform: translatey(-20px);}}
   @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
   @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
   @keyframes spin { 100% { transform:rotate(360deg); } }
@@ -265,7 +271,7 @@ section .title::after {
     /* animation: float 6s ease-in-out infinite; */
   }
   .about .about-content .left .tools .screwdriver {
-    animation: float 7s ease-in-out infinite;
+    animation: float 6s ease-in-out infinite;
   }
   .about .about-content .left .tools #screwdriver {
     /* animation: float 6s ease-in-out infinite, rotate-left 3s infinite; */
@@ -276,7 +282,7 @@ section .title::after {
     mix-blend-mode: difference;
   }
   .about .about-content .left .tools .wrench {
-    animation: float 5s ease-in-out infinite;
+    animation: float-neg 6s ease-in-out infinite;
   }
   .about .about-content .left .tools #wrench {
     /* animation: float 6s ease-in-out infinite, rotate-left 3s infinite; */
