@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500;600;700&display=swap");
 
 /* GLobal styling ==================================================================== */
-body {
+html, body {
   margin: 0px;
   padding: 0px;
   font-family: montserrat, sans-serif;
@@ -17,6 +17,49 @@ body {
   max-width: 100%;
   padding: 0 80px;
   margin: auto;
+}
+
+
+/* Global styling for similar items */
+.about .about-content,
+.projects .projects-content,
+.skills .skills-content,
+.contact .contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+section .title {
+  position: relative;
+  text-align: center;
+  font-size: 42px;
+  /* font-weight: 500; */
+  /* margin: 0 0 60px 0; */
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+}
+section .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 183px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+section .title::after {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  font-size: 19px;
+  color: #12191e;
+  padding: 0 5px;
+  background: #fff;
+  transform: translateX(-50%);
 }
 
 
@@ -88,7 +131,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 469px;
+    /* height: 469px; */
   }
   .home .home-content .text h1 {
     font-weight: bold;
@@ -139,8 +182,8 @@ body {
 
     animation-name: heartFadeInOut; 
     animation-iteration-count: infinite;
-    animation-duration: 1.2s;
-    /* animation-duration: 1s; */
+    animation-duration: 1.66s;
+    /* animation-duration: 0.83s; */
   }
 
 
@@ -169,54 +212,146 @@ body {
 /* About section ====================================================================*/
 .about {
     padding: 100px 0;
-    background: radial-gradient(circle at bottom, #5d7f98 5%, #f9fafb 5%);
+    /* background: radial-gradient(circle at bottom, #5d7f98 5%, #f9fafb 5%); */
+    background: #fff;
     display: flex;
+    height: 70vh;
+    margin-bottom: 0px;
   }
   .about .max-width {
     max-width: 1200px;
   }
   .about .title::after {
-    content: "Software Engineer";
+    content: "Jaguar Landrover Specialists";
     background: #f9fafb;
-    color: #5d7f98;
+    color: #ff2525;
   }
+
+  /* Left tools */
   .about .about-content .left {
-    width: 45%;
+    width: 4%;
+    /* justify-content: flex-end; */
   }
   .about .about-content .left img {
-    height: 400px;
-    width: 400px;
+    /* height: 400px; */
+    /* width: 400px; */
     object-fit: cover;
-    border-radius: 100px;
-    transform: scale(1.2);
+    /* border-radius: 100px; */
+    /* transform: scale(1.2); */
     mix-blend-mode: darken;
   }
   .about .about-content .left img:hover {
     mix-blend-mode: normal;
   }
-  .about .about-content .right {
+  
+  @keyframes float {
+    0% {filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, 1));
+        transform: translatey(0px);}
+    50% {filter: drop-shadow( 4px 33px 2px rgba(0, 0, 0, .1));
+        transform: translatey(-20px);}
+    100% {filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, 1));
+        transform: translatey(0px);}
+  }
+  @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+  @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+  @keyframes spin { 100% { transform:rotate(360deg); } }
+  @-moz-keyframes spin-neg { 100% { -moz-transform: rotate(-360deg); } }
+  @-webkit-keyframes spin-neg { 100% { -webkit-transform: rotate(-360deg); } }
+  @keyframes spin-neg { 100% { transform:rotate(-360deg); } }
+
+  .about .about-content .left .tools {
+    position: absolute;
+    width: 25%;
+    /* animation: float 6s ease-in-out infinite; */
+  }
+  .about .about-content .left .tools .screwdriver {
+    animation: float 7s ease-in-out infinite;
+  }
+  .about .about-content .left .tools #screwdriver {
+    /* animation: float 6s ease-in-out infinite, rotate-left 3s infinite; */
+    -webkit-animation:spin 8s linear infinite;
+    -moz-animation:spin 8s linear infinite;
+    animation: spin 8s linear infinite;
+    top:-66px;
+    mix-blend-mode: difference;
+  }
+  .about .about-content .left .tools .wrench {
+    animation: float 5s ease-in-out infinite;
+  }
+  .about .about-content .left .tools #wrench {
+    /* animation: float 6s ease-in-out infinite, rotate-left 3s infinite; */
+    -webkit-animation:spin-neg 6s linear infinite;
+    -moz-animation:spin-neg 6s linear infinite;
+    animation: spin-neg 6s linear infinite;
+    mix-blend-mode: difference;
+  }
+  
+  /* Middle text*/
+  .about .about-content .middle {
     width: 55%;
   }
-  .about .about-content .right .text {
+  .about .about-content .middle .text {
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
   }
-  .about .about-content .right .text span {
+  .about .about-content .middle .text span {
     font-size: 37px;
     font-weight: 600;
   }
-  .about .about-content .right p {
+  .about .about-content .middle p {
     text-align: justify;
     color: #000;
     font-size: 18px;
   }
-  .about .about-content .right a {
+  .about .about-content .middle a {
     transition: all 0.3s ease;
     text-decoration: none;
     color: #5d7f98;
   }
-  .about .about-content .right a:hover {
+  .about .about-content .middle a:hover {
     font-size: 101%;
     color: #12191e;
+  }
+
+  /* Right Cogs */
+  .about .about-content .right {
+    width: 4%;
+    /* justify-content: flex-end; */
+  }
+  .about .about-content .right img {
+    /* height: 400px; */
+    /* width: 400px; */
+    object-fit: cover;
+    /* border-radius: 100px; */
+    /* transform: scale(1.2); */
+    mix-blend-mode: darken;
+  }
+  .about .about-content .right img:hover {
+    mix-blend-mode: normal;
+  }
+  
+
+  .about .about-content .right .cogs {
+    position: absolute;
+    width: 66px;
+  }
+  .about .about-content .right .cogs #cog-top {
+    -webkit-animation:spin 8s linear infinite;
+    -moz-animation:spin 8s linear infinite;
+    animation: spin 8s linear infinite;
+    top:-80px;
+  }
+  .about .about-content .right .cogs #cog-middle {
+    /* transform:rotate(deg); */
+    -webkit-animation:spin-neg 8s linear infinite;
+    -moz-animation:spin-neg 8s linear infinite;
+    animation: spin-neg 8s linear infinite;
+    top:-40px;
+    left: -40px;
+  }
+  .about .about-content .right .cogs #cog-bottom {
+    -webkit-animation:spin 8s linear infinite;
+    -moz-animation:spin 8s linear infinite;
+    animation: spin 8s linear infinite;
   }
