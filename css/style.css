@@ -2,6 +2,7 @@
 /* CSS Document */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* GLobal styling ==================================================================== */
 html, body {
@@ -33,7 +34,7 @@ html, body {
 section .title {
   position: relative;
   text-align: center;
-  font-size: 42px;
+  font-size: 40px;
   /* font-weight: 500; */
   /* margin: 0 0 60px 0; */
   margin-bottom: 60px;
@@ -59,7 +60,9 @@ section .title::after {
     position: fixed;
     width: 100%;
     /* padding: 10px 0; */
+    /* font-family: montserrat, sans-serif; */
     font-family: "Ubuntu", sans-serif;
+
     transition: all 0.3s ease;
     z-index: 1;
     background-color: rgba(255, 255, 255, 1);
@@ -98,7 +101,7 @@ section .title::after {
 /* Home section ====================================================================*/
 .home {
     display: flex;
-    background: url("images/belts.jpg") top no-repeat;
+    background: url("/images/belts.jpg") top no-repeat;
       /* radial-gradient(at top left, #12191e 0%, #000000 55%); */
     background-attachment: fixed;
     height: 100vh;
@@ -123,23 +126,29 @@ section .title::after {
     align-items: center;
     text-align: center;
     /* height: 469px; */
+    /* background-color: #000; */
   }
   .home .home-content .text h1 {
     font-weight: bold;
     margin: 0px;
     color: #ffffff;
+    font-family: montserrat, sans-serif;
+    font-family: "Ubuntu", sans-serif;
+    
+
   }.home .home-content .text h1 span {
     color: #ff2525;
   }
   .home .home-content .text p {
     /* font-family: "Ubuntu", sans-serif; */
     font-size: 18px;
-    font-weight: 600;
     line-height: 25px;
     /* letter-spacing: .5px; */
     margin: 20px 0px 0px;
     color: rgba(255, 255, 255, 1);
-    text-shadow: 2px 2px 0 #000, -0.1px -0.1px 0 #000
+    text-shadow: 2px 2px 0 #000, -0.1px -0.1px 0 #000;
+    font-family: montserrat, sans-serif;
+    font-weight: 600;
   }
   
   @keyframes heartFadeInOut {
@@ -226,6 +235,9 @@ section .title::after {
     content: "Jaguar Landrover Specialists";
     background: #fff;
     color: #ff2525;
+    font-family: montserrat, sans-serif;
+    /* font-family: "Ubuntu", sans-serif; */
+
   }
 
   /* Left tools */
@@ -303,6 +315,7 @@ section .title::after {
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
+    font-family: montserrat, sans-serif;
   }
   .about .about-content .middle .text span {
     font-size: 37px;
@@ -312,6 +325,7 @@ section .title::after {
     text-align: justify;
     color: #000;
     font-size: 18px;
+    /* font-weight: 400; */
   }
   .about .about-content .middle a {
     transition: all 0.3s ease;
