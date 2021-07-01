@@ -84,7 +84,7 @@
                     <!-- Middle: About us -->
                     <div class="column middle">
                         <p> We are an auto repair shop with referrence and guidance from JLR’s (Jaguar Land Rover) Global technical reference manual.
-                            Working proactively with diligence and efficient equipment and technology, We offers services such as: 
+                            Working proactively with diligence and efficient equipment and technology, We offer services such as: 
                             engine & transmission repairs, brakes & rotor replacements, electrical diagnosis, servicing and general car maintenance to modern vehicles.
 
                             We seek to improve pricing and maintain standards of delearship level repair, as well as play a role in increasing our local economy.
@@ -247,46 +247,51 @@
         <section class="contact" id="contact">
             <div class="max-width">
                 <h2 class="title">CONTACT US</h2>
-                    <div class="container-left">
-                        <h3>Contact Information</h3>
-                        <p>We're open for any suggestion or just to have a chat</p>
+                    <div class="container">
 
-                        <div class="my-email">
-                            <i class="fas fa-envelope"></i> 
-                            <a href="mailto:info@deltamaxauto.com" target="_blank">info@deltamaxauto.com</a>
-                        </div>
-
-                        <div class="my-cellphone">
-                            <i class="fas fa-phone-alt"></i> 
+                        <div class="container-left">
+                            <h3>Contact Information</h3>
+                            <p>We're open for any suggestion or just to have a chat</p>
+                            
+                            <div class="my-email">
+                                <i class="fas fa-envelope"></i> 
+                                <a href="mailto:info@deltamaxauto.com" target="_blank">info@deltamaxauto.com</a>
+                            </div>
+                            
+                            <div class="my-cellphone">
+                                <i class="fas fa-phone-alt"></i> 
                             <a href="tel:+27100126022">+27 10 012 6022</a>
+                            </div>
+                        
+                            <div class="my-location">
+                                <i class="fas fa-map-marker-alt"></i> 
+                                <a href="http://maps.google.com/maps?q=291+Surrey+Ave,+Ferndale,+Randburg">
+                                    291 Surrey Ave, Ferndale, Randburg, Gauteng, South Africa</a>
+                            </div>
                         </div>
 
-                        <div class="my-location">
-                            <i class="fas fa-map-marker-alt"></i> 
-                            <a href="http://maps.google.com/maps?q=291+Surrey+Ave,+Ferndale,+Randburg">
-                                291 Surrey Ave, Ferndale, Randburg, Gauteng, South Africa</a>
+                        <div class="container-right" >
+                            <form class="contact-form" action="php/contact.php" method="POST">
+                        
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name.."><br>
+                                
+                                <label for="email" class="form-label">Email</label>
+                                <input type="text" id="email" name="email" placeholder="Your email adress.."><br>
+                                
+                                <label for="number" class="form-label">Number</label>
+                                <input type="text" id="number" name="number" placeholder="Your phone number.."><br>
+                                
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" placeholder="How can we help you.." style="height:100px"></textarea><br>
+                                
+                                <input type="submit" value="Submit">
+                            
+                            </form>
                         </div>
 
                     </div>
-                    <div class="container-right">
-                        <form action="action_page.php">
-                    
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Your name..">
-                    
-                        <label for="email">Email</label>
-                        <input type="text" id="email" name="email" placeholder="Your email adress..">
-
-                        <label for="number">Phone number</label>
-                        <input type="text" id="number" name="number" placeholder="Your phone number..">
-                    
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="How can we help you.." style="height:100px"></textarea>
-                
-                        <input type="submit" value="Submit">
-                    
-                        </form>
-                    </div>
+            </div>
         </section>
 
     
