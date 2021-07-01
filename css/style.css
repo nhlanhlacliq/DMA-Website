@@ -11,9 +11,9 @@ html, body {
   font-family: montserrat, sans-serif;
   height: 99vh;
 }
-.home {
+/* .home {
   /* background-image: radial-gradient(at top left, #fff 0%, #f1f1f1 55%); */
-}
+/* }  */
 .max-width {
   max-width: 100%;
   padding: 0 80px;
@@ -221,6 +221,9 @@ section .title::after {
   .about .max-width {
     max-width: 1200px;
   }
+  /* .about .title {
+
+  } */
   .about .title::before {
     content: "";
     position: absolute;
@@ -325,6 +328,7 @@ section .title::after {
     text-align: justify;
     color: #000;
     font-size: 18px;
+    margin-top: -18px;
     /* font-weight: 400; */
   }
   .about .about-content .middle a {
