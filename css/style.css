@@ -41,6 +41,7 @@ section .title {
   padding-bottom: 20px;
   font-family: "Ubuntu", sans-serif;
   font-weight: 600;
+  text-shadow: 0px 4px 5px #666;
 }
 
 section .title::after {
@@ -52,6 +53,7 @@ section .title::after {
   padding: 0 5px;
   background: #fff;
   transform: translateX(-50%);
+  text-shadow: 0px 0px 0px #fff;
 }
 
 /* Navigation Bar ====================================================================*/
@@ -61,7 +63,6 @@ section .title::after {
   /* padding: 10px 0; */
   /* font-family: montserrat, sans-serif; */
   font-family: "Ubuntu", sans-serif;
-
   transition: all 0.3s ease;
   z-index: 1;
   background-color: rgba(255, 255, 255, 1);
@@ -77,6 +78,9 @@ section .title::after {
 .navigation .logo a img {
   height: 110px;
   color: #fff;
+  filter: drop-shadow(0px 4px 1px #ccc);
+
+  /* shadow: 0px 4px 5px #666; */
   /* mix-blend-mode: difference; */
 }
 .navigation .menu li {
@@ -86,6 +90,7 @@ section .title::after {
 .navigation .menu li a {
   text-decoration: none;
   color: #fff;
+  text-shadow: 0px 3px 3px #666;
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
@@ -99,7 +104,10 @@ section .title::after {
 /* Home section ====================================================================*/
 .home {
   display: flex;
-  background: url("/images/belts.jpg") top no-repeat;
+  /* background: linear-gradient(rgba(0, 56, 68, 0.45), rgba(0, 56, 68, 0.45)), */
+  /* url("/images/belts1.jpg") top no-repeat; */
+  background: url("/images/belts_blue.jpg") top no-repeat;
+  background-color: #000;
   /* radial-gradient(at top left, #12191e 0%, #000000 55%); */
   background-attachment: fixed;
   height: 100vh;
@@ -107,7 +115,8 @@ section .title::after {
   color: #ffffff;
   min-height: 500px;
   /* font-family: "Ubuntu", sans-serif; */
-  background-position: 0px -85px;
+  background-position: 0px 113.4px;
+  /* background-blend-mode: difference; */
 }
 .home .max-width {
   margin: auto;
@@ -130,8 +139,9 @@ section .title::after {
   font-weight: bold;
   margin: 0px;
   color: #ffffff;
-  font-family: montserrat, sans-serif;
-  font-family: "Ubuntu", sans-serif;
+  /* font-family: montserrat, sans-serif; */
+  /* font-family: "Ubuntu", sans-serif; */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .home .home-content .text h1 span {
   color: #ff2525;
@@ -202,7 +212,8 @@ section .title::after {
   text-transform: uppercase;
   outline: none;
   text-shadow: 2px 2px 0 #000;
-  font-family: montserrat, sans-serif;
+  /* font-family: montserrat, sans-serif; */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   transition: transform 80ms ease-in;
 
   animation-name: heartFadeInOut;
@@ -261,8 +272,9 @@ section .title::after {
   content: "Jaguar Landrover Specialists";
   background: #fff;
   color: #ff2525;
-  font-family: montserrat, sans-serif;
-  /* font-family: "Ubuntu", sans-serif; */
+  /* font-family: montserrat, sans-serif; */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
 }
 
 /* Left tools */
@@ -492,20 +504,22 @@ a {
 .details p {
   font-family: calibri;
   font-weight: bold;
-  color: #6a6a74;
+  color: #888;
   text-align: center;
   margin-top: 20px;
 }
 .marvel {
-  color: #32323e;
+  color: #888;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-family: bebas kai;
-  font-size: 25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 26px;
 }
-.logo-s {
-  height: 60px;
-}
+
+/* .logo-s { */
+/* height: 60px; */
+/* } */
 .box:hover {
   background-color: #17171d;
   transform-style: preserve-3d;
@@ -513,7 +527,7 @@ a {
   transition: all ease 0.3s;
 }
 .box:hover .marvel {
-  color: #c0292b;
+  color: #ff2525;
   transition: all ease 0.5s;
 }
 /*--responsive for mobile phone--*/
@@ -534,9 +548,6 @@ a {
 /* Contact form ==================================================================================================================== */
 
 /* When moving the mouse over the submit button, add a darker green color */
-input[type="submit"]:hover {
-  background-color: #45a049;
-}
 
 .contact {
   background: #fff;
@@ -564,6 +575,15 @@ input[type="submit"]:hover {
   padding: 10px;
   /* margin: 0%; */
   background-color: #12191e;
+  text-align: center;
+}
+
+.contact .container-left h3 {
+  font-size: 36px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #fff;
+  text-shadow: 0px 3px 4px #555;
+  /* text-decoration: underline; */
 }
 
 .contact .container-right {
@@ -580,6 +600,7 @@ input[type="submit"]:hover {
 }
 
 .contact .container-right .contact-form {
+  width: 70%;
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
@@ -589,13 +610,16 @@ input[type="submit"]:hover {
 input[type="text"],
 textarea {
   width: 100%; /* Full width */
+  max-width: 100%;
+  max-height: 160px;
   padding: 10px; /*Some padding
-  border: 1px solid #ccc; /* Gray border */
+    border: 1px solid #ccc; /* Gray border */
   border-radius: 7px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 10px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical; /*  Allow the user to vertically resize the textarea (not horizontally) */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .contact .container-right .contact-form .form-label {
@@ -605,7 +629,7 @@ textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type="submit"] {
-  background-color: #fd4343;
+  background-color: #006c67;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -613,4 +637,51 @@ input[type="submit"] {
   cursor: pointer;
   /* justify-content: end; */
   /* text-align: right; */
+}
+input[type="submit"]:hover {
+  background-color: #003844;
+}
+.my-cellphone,
+.my-email,
+.my-location {
+  margin-top: auto;
+  font-size: 16px;
+  color: #fdfdfd;
+  margin-bottom: 13%;
+  align-self: left;
+}
+.my-cellphone a,
+.my-email a,
+.my-location a {
+  color: #999;
+  text-decoration: none;
+}
+.my-cellphone i,
+.my-email i,
+.my-location i {
+  font-size: 20px;
+}
+.my-cellphone a:hover,
+.my-email a:hover,
+.my-location a:hover {
+  color: #fff;
+}
+.form-input {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #888;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color 0.2s;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.form-input::placeholder {
+  color: #666;
+}
+.form-input:focus {
+  border-bottom-color: #006c67;
 }
