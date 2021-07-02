@@ -15,7 +15,10 @@
     <!--Jquery-->
     <script type="text/javascript" src="js/JQuery3.3.1.js"></script>
     <script type="text/javascript" src="js/lightslider.js"></script>
-    
+    <script
+      src="https://kit.fontawesome.com/6dfb0427e6.js"
+      crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
@@ -253,37 +256,39 @@
                             <h3>Contact Information</h3>
                             <p>We're open for any suggestion or just to have a chat</p>
                             
-                            <div class="my-email">
-                                <i class="fas fa-envelope"></i> 
-                                <a href="mailto:info@deltamaxauto.com" target="_blank">info@deltamaxauto.com</a>
-                            </div>
+                            <div class="information">
+                                <div class="my-email">
+                                    <i class="fas fa-envelope"></i> 
+                                    <a href="mailto:info@deltamaxauto.com" target="_blank">info@deltamaxauto.com</a>
+                                </div>
+                                
+                                <div class="my-cellphone">
+                                    <i class="fas fa-phone-alt"></i> 
+                                <a href="tel:+27100126022">+27 10 012 6022</a>
+                                </div>
                             
-                            <div class="my-cellphone">
-                                <i class="fas fa-phone-alt"></i> 
-                            <a href="tel:+27100126022">+27 10 012 6022</a>
-                            </div>
-                        
-                            <div class="my-location">
-                                <i class="fas fa-map-marker-alt"></i> 
-                                <a href="http://maps.google.com/maps?q=291+Surrey+Ave,+Ferndale,+Randburg">
-                                    291 Surrey Ave, Ferndale, Randburg, Gauteng, South Africa</a>
+                                <div class="my-location">
+                                    <i class="fas fa-map-marker-alt"></i> 
+                                    <a href="http://maps.google.com/maps?q=291+Surrey+Ave,+Ferndale,+Randburg" target="_blank">
+                                        291 Surrey Ave, Ferndale, Randburg, Gauteng, South Africa</a>
+                                </div>
                             </div>
                         </div>
 
                         <div class="container-right" >
                             <form class="contact-form" action="php/contact.php" method="POST">
                         
-                                <label for="name" class="form-label">Name</label>
-                                <input type="text" id="name" name="name" placeholder="Your name.."><br>
+                                <!-- <label for="name" class="form-label">Name</label> -->
+                                <input class="form-input" type="text" id="name" name="name" placeholder="Your  name"><br>
                                 
-                                <label for="email" class="form-label">Email</label>
-                                <input type="text" id="email" name="email" placeholder="Your email adress.."><br>
+                                <!-- <label for="email" class="form-label">Email</label> -->
+                                <input class="form-input" type="text" id="email" name="email" placeholder="Email  adress"><br>
                                 
-                                <label for="number" class="form-label">Number</label>
-                                <input type="text" id="number" name="number" placeholder="Your phone number.."><br>
+                                <!-- <label for="number" class="form-label">Number</label> -->
+                                <input class="form-input" type="text" id="number" name="number" placeholder="Phone  number"><br>
                                 
-                                <label for="message" class="form-label">Message</label>
-                                <textarea id="message" name="message" placeholder="How can we help you.." style="height:100px"></textarea><br>
+                                <!-- <label for="message" class="form-label">Message</label> -->
+                                <textarea class="form-input" type="text" id="message" name="message" placeholder="How can we help you?" style="height:100px"></textarea><br>
                                 
                                 <input type="submit" value="Submit">
                             
