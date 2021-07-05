@@ -37,7 +37,6 @@ section .title {
   font-weight: 600;
   text-shadow: 0px 4px 5px #666;
 }
-
 section .title::after {
   position: absolute;
   bottom: -8px;
@@ -478,15 +477,12 @@ section .title::after {
 }
 .services .services-content {
   width: 100%;
-  /* height: 99vh; */
   margin-top: 60px;
-  /* background-color:#a4152c; */
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 100px;
   bottom: -50px;
-  /* padding-bottom: -40px; */
 }
 .services .services-content .box {
   width: 350px;
@@ -556,15 +552,11 @@ section .title::after {
 }
 
 /* Contact form ==================================================================================================================== */
-
-/* When moving the mouse over the submit button, add a darker green color */
-
 .contact {
   background: #fff;
   height: 99vh;
   align-content: center;
-  padding-bottom: 100px;
-  /* padding-top: 10px; */
+  padding-bottom: 50px;
 }
 .contact::before {
   content: "";
@@ -572,13 +564,10 @@ section .title::after {
   height: 1px; /*fixed header height */
   margin: -1px 0 0; /* negative fixed header height */
 }
-
 .contact .title {
-  /* margin-top: 225px; */
   padding-top: 132px;
   margin-bottom: 0px;
 }
-
 .contact .container {
   margin: auto;
   margin-top: 0px;
@@ -590,59 +579,70 @@ section .title::after {
   box-shadow: 0px 10px 20px #12191e;
   border-radius: 15px;
 }
-
-/* Add a background color and some padding around the form */
-.contact .container-left {
-  /* margin-top: -1px; */
+/* Left side */
+.contact .container .container-left {
   width: 50%;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   background-color: #f2f2f2;
   padding: 10px;
-  /* margin: 0%; */
   background-color: #12191e;
   align-items: center;
   text-align: left;
 }
-
-.contact .container-left h3 {
+.contact .container .container-left h3 {
   font-size: 36px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #fff;
   text-shadow: 0px 3px 4px #555;
   text-align: center;
-  /* text-decoration: underline; */
 }
-.contact .container-left p {
+.contact .container .container-left p {
   color: #999;
   text-align: center;
   margin: -15px 50px 45px 50px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: large;
 }
-
-.contact .container-left .information {
+.contact .container .container-left .information {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-left: 15%;
-  /* margin-right: 20%; */
+}
+.contact .container .container-left .information .my-cellphone,
+.contact .container .container-left .information .my-email,
+.contact .container .container-left .information .my-location {
+  margin-top: auto;
+  font-size: 18px;
+  color: #006c67;
+  margin-bottom: 10%;
+  align-self: left;
+}
+.contact .container .container-left .information .my-cellphone a,
+.contact .container .container-left .information .my-email a,
+.contact .container .container-left .information .my-location a {
+  color: #999;
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.contact .container .container-left .information .my-cellphone a:hover,
+.contact .container .container-left .information .my-email a:hover,
+.contact .container .container-left .information .my-location a:hover {
+  color: #fff;
 }
 
-.contact .container-right {
+/* Right side */
+.contact .container .container-right {
   width: 50%;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  /* background-color: #f2f2f2; */
   padding: 20px;
   background-color: #212b31;
   display: block;
   text-align: center;
-  /* justify-content: center; */
-  /* align-items: center; */
 }
-
-.contact .container-right .contact-form {
+.contact .container .container-right .contact-form {
   width: 70%;
   display: inline-block;
   margin-left: auto;
@@ -653,68 +653,7 @@ section .title::after {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding-top: 30px;
 }
-
-input[type="text"],
-textarea {
-  width: 100%; /* Full width */
-  max-width: 100%;
-  max-height: 180px;
-  padding: 10px; /*Some padding
-    border: 1px solid #ccc; /* Gray border */
-  border-radius: 7px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 10px; /* Bottom margin */
-  resize: none; /* Allow the user to vertically resize the textarea (not horizontally) */
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-/* .contact .container-right .contact-form .form-label {
-  color: #fff;
-  font-size: 15px;
-} */
-
-/* Style the submit button with a specific background color etc */
-input[type="submit"] {
-  background-color: #006c67;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  /* justify-content: end; */
-  /* text-align: right; */
-}
-input[type="submit"]:hover {
-  background-color: #003844;
-}
-.my-cellphone,
-.my-email,
-.my-location {
-  margin-top: auto;
-  font-size: 16px;
-  color: #006c67;
-  margin-bottom: 13%;
-  align-self: left;
-}
-.my-cellphone a,
-.my-email a,
-.my-location a {
-  color: #999;
-  text-decoration: none;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-.my-cellphone i,
-.my-email i,
-.my-location i {
-  font-size: 20px;
-}
-.my-cellphone a:hover,
-.my-email a:hover,
-.my-location a:hover {
-  color: #fff;
-}
-.form-input {
+.contact .container .container-right .contact-form .form-input {
   width: 100%;
   padding: 10px 0;
   background: none;
@@ -722,18 +661,38 @@ input[type="submit"]:hover {
   border-bottom: 1px solid #666;
   color: #ccc;
   font-size: 16px;
-  /* text-transform: uppercase; */
   outline: none;
   transition: border-color 0.2s;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.form-input::placeholder {
+.contact .container .container-right .contact-form .form-input::placeholder {
   color: #666;
 }
-.form-input:focus {
+.contact .container .container-right .contact-form .form-input:focus {
   border-bottom-color: #006c67;
 }
-.contact-form .text {
-  color: red;
-  font-size: 40px;
+/* Inputs */
+input[type="text"],
+textarea {
+  width: 100%; /* Full width */
+  max-width: 100%;
+  max-height: 180px;
+  padding: 10px; /*Some padding */
+  border-radius: 7px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 10px; /* Bottom margin */
+  resize: none; /* Allow the user to vertically resize the textarea (not horizontally) */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+input[type="submit"] {
+  background-color: #006c67;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #003844;
 }
