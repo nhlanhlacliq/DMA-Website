@@ -265,20 +265,21 @@
                             <form class="contact-form" name="contact-form" id="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSdowFlMQe3z_QXQu6F1XZUUli3eAe2gzhi0lxDo1xFW2dBjqg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
                         
                                 <!-- <label for="name" class="form-label">Name</label> -->
-                                <input class="form-input" type="text" id="entry.1039396526" name="entry.1039396526" placeholder="Your  name"><br>
+                                <input class="form-input" type="text" id="entry.1039396526" name="entry.1039396526" placeholder="YOUR  NAME"><br>
                                 
                                 <!-- <label for="email" class="form-label">Email</label> -->
-                                <input class="form-input" type="text" id="entry.1423734644" name="entry.1423734644" placeholder="Email  adress"><br>
+                                <input class="form-input" type="text" id="entry.1423734644" name="entry.1423734644" placeholder="EMAIL ADDRESS"><br>
                                 
                                 <!-- <label for="number" class="form-label">Number</label> -->
-                                <input class="form-input" type="text" id="entry.1940479554" name="entry.1940479554" placeholder="Phone  number"><br>
+                                <input class="form-input" type="text" id="entry.1940479554" name="entry.1940479554" placeholder="PHONE NUMBER"><br>
                                 
                                 <!-- <label for="message" class="form-label">Message</label> -->
-                                <textarea class="form-input" type="text" id="entry.1065258536" name="entry.1065258536" placeholder="How can we help you?" style="height:100px"></textarea><br>
+                                <textarea class="form-input" type="text" id="entry.1065258536" name="entry.1065258536" placeholder="HOW CAN WE HELP YOU?" style="height:100px"></textarea><br>
                                 
                                 <input type="submit" value="Submit">
                             
                             </form>
+                            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
                         </div>
 
                     </div>
@@ -297,7 +298,7 @@
         <script type="text/javascript">
         $('#contact-form').on('submit', function(e) {
         $('#contact-form *').fadeOut(2000);
-        $('#contact-form').prepend('Your message has been sent!');
+        $('#contact-form').prepend('Your message has been sent! We will contact you shortly');
         });
         </script>
 
