@@ -191,74 +191,67 @@
         <section class="contact" >
             <div class="max-width">
                 <h2 class="title" id="contact">CONTACT US</h2>
-                    <div class="container">
+                <div class="container">
 
-                        <div class="container-left">
-                            <h3>Contact Information</h3>
-                            <p>Reach out below or use the form and we'll promptly get back to you</p>
+                    <div class="container-left">
+                        <h3>Contact Information</h3>
+                        <p>Reach out below or use the form and we'll promptly get back to you</p>
+                        
+                        <div class="information">
+                            <div class="my-email">
+                                <i class="fas fa-envelope"></i> 
+                                <a href="mailto:info@deltamaxauto.com" target="_blank">info@deltamaxauto.com</a>
+                            </div>
                             
-                            <div class="information">
-                                <div class="my-email">
-                                    <i class="fas fa-envelope"></i> 
-                                    <a href="mailto:info@deltamaxauto.com" target="_blank">info@deltamaxauto.com</a>
-                                </div>
-                                
-                                <div class="my-cellphone">
-                                    <i class="fas fa-phone-alt"></i> 
-                                <a href="tel:+27100126022">+27 10 012 6022</a>
-                                </div>
-                            
-                                <div class="my-location">
-                                    <i class="fas fa-map-marker-alt"></i> 
-                                    <a href="http://maps.google.com/maps?q=291+Surrey+Ave,+Ferndale,+Randburg" target="_blank">
-                                        291 Surrey Ave, Ferndale, Randburg, Gauteng, South Africa</a>
-                                </div>
+                            <div class="my-cellphone">
+                                <i class="fas fa-phone-alt"></i> 
+                            <a href="tel:+27100126022">+27 10 012 6022</a>
+                            </div>
+                        
+                            <div class="my-location">
+                                <i class="fas fa-map-marker-alt"></i> 
+                                <a href="http://maps.google.com/maps?q=291+Surrey+Ave,+Ferndale,+Randburg" target="_blank">
+                                    291 Surrey Ave, Ferndale, Randburg, Gauteng, South Africa</a>
                             </div>
                         </div>
-
-                        <div class="container-right" >
-                            <!-- https://github.com/toperkin/staticFormEmails/blob/master/README.md -->
-                            <!-- https://docs.google.com/forms/d/e/1FAIpQLSdowFlMQe3z_QXQu6F1XZUUli3eAe2gzhi0lxDo1xFW2dBjqg/viewform?usp=pp_url&entry.1039396526=Nhlanhla+Masuku&entry.1423734644=nhlatha753@gmail.com&entry.1940479554=0844900875&entry.1065258536=Hello+Hello+Hello -->
-                            <form class="contact-form" name="contact-form" id="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSdowFlMQe3z_QXQu6F1XZUUli3eAe2gzhi0lxDo1xFW2dBjqg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-                        
-                                <!-- <label for="name" class="form-label">Name</label> -->
-                                <input class="form-input" type="text" id="entry.1039396526" name="entry.1039396526" placeholder="YOUR  NAME"><br>
-                                
-                                <!-- <label for="email" class="form-label">Email</label> -->
-                                <input class="form-input" type="text" id="entry.1423734644" name="entry.1423734644" placeholder="EMAIL ADDRESS"><br>
-                                
-                                <!-- <label for="number" class="form-label">Number</label> -->
-                                <input class="form-input" type="text" id="entry.1940479554" name="entry.1940479554" placeholder="PHONE NUMBER"><br>
-                                
-                                <!-- <label for="message" class="form-label">Message</label> -->
-                                <textarea class="form-input" type="text" id="entry.1065258536" name="entry.1065258536" placeholder="HOW CAN WE HELP YOU?" style="height:100px"></textarea><br>
-                                
-                                <input type="submit" value="Submit">
-                            
-                            </form>
-                            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-                        </div>
-
                     </div>
+
+                    <div class="container-right" >
+                        <!-- https://github.com/toperkin/staticFormEmails/blob/master/README.md -->
+                        <!-- https://docs.google.com/forms/d/e/1FAIpQLSdowFlMQe3z_QXQu6F1XZUUli3eAe2gzhi0lxDo1xFW2dBjqg/viewform?usp=pp_url&entry.1039396526=Nhlanhla+Masuku&entry.1423734644=nhlatha753@gmail.com&entry.1940479554=0844900875&entry.1065258536=Hello+Hello+Hello -->
+                        <form class="contact-form" name="contact-form" id="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSdowFlMQe3z_QXQu6F1XZUUli3eAe2gzhi0lxDo1xFW2dBjqg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+                    
+                            <input class="form-input" type="text" id="entry.1039396526" name="entry.1039396526" placeholder="YOUR  NAME"><br>
+                            
+                            <input class="form-input" type="text" id="entry.1423734644" name="entry.1423734644" placeholder="EMAIL ADDRESS"><br>
+                            
+                            <input class="form-input" type="text" id="entry.1940479554" name="entry.1940479554" placeholder="PHONE NUMBER"><br>
+                            
+                            <textarea class="form-input" type="text" id="entry.1065258536" name="entry.1065258536" placeholder="HOW CAN WE HELP YOU?" style="height:100px"></textarea><br>
+                            
+                            <input type="submit" value="Submit">
+                        </form>
+                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+                    </div>
+                </div>
             </div>
         </section>
-
+    </div>
     
-        <script src="js/script.js" type="text/javascript"></script>
-        <!-- <script src="js/jquery.min.js"></script> -->
-        <script src="js/popper.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.validate.min.js"></script>
-        <script src="js/main.js"></script>
-        <script src="assets/js/jquery.min.js"></script>
-        <script type="text/javascript">var submitted=false;</script>
-        <script type="text/javascript">
-        $('#contact-form').on('submit', function(e) {
-        $('#contact-form *').fadeOut(2000);
-        $('#contact-form').prepend('Your message has been sent! We will contact you shortly');
-        });
-        </script>
-
-
+    <script src="js/script.js" type="text/javascript"></script>
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript">var submitted=false;</script>
+    <script type="text/javascript">
+    $('#contact-form').on('submit', function(e) {
+    $('#contact-form *').fadeOut(2000);
+    $('#contact-form').prepend('Your message has been sent! We will contact you shortly');
+    });
+    </script>
 </body>
+
 </html>
