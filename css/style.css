@@ -553,6 +553,10 @@ a {
   color: #ff2525;
   transition: all ease 0.5s;
 }
+.box:hover .details p {
+  color: #ccc;
+}
+
 /*--responsive for mobile phone--*/
 @media (max-width: 720px) {
   .box {
