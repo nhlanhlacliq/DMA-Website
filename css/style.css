@@ -491,7 +491,7 @@ a {
   align-items: center;
   margin-bottom: 100px;
   bottom: -50px;
-  padding-bottom: -50px;
+  /* padding-bottom: -40px; */
 }
 
 .services .title {
@@ -576,7 +576,8 @@ a {
   background: #fff;
   height: 99vh;
   align-content: center;
-  /* padding-top: 100px; */
+  padding-bottom: 100px;
+  /* padding-top: 10px; */
 }
 .contact::before {
   content: "";
@@ -584,15 +585,18 @@ a {
   height: 1px; /*fixed header height */
   margin: -1px 0 0; /* negative fixed header height */
 }
-.contact .max-width {
-  /* background: #fff; */
-  /* padding-top: 80px; */
+
+.contact .title {
+  /* margin-top: 225px; */
+  padding-top: 132px;
+  margin-bottom: 0px;
 }
 
 .contact .container {
   margin: auto;
+  margin-top: 0px;
   width: 80%;
-  height: 440px;
+  height: 420px;
   display: flex;
   flex-direction: row;
   background-color: transparent;
@@ -602,6 +606,7 @@ a {
 
 /* Add a background color and some padding around the form */
 .contact .container-left {
+  /* margin-top: -1px; */
   width: 50%;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
