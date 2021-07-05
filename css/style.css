@@ -463,25 +463,20 @@ section .title::after {
 }
 
 /* Sevices section ================================================================= */
-ul {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-}
-
 .services::before {
   content: "";
   display: block;
   height: -1px; /*fixed header height */
   margin: 1px 0 0; /* negative fixed header height */
 }
-
 .services .max-width {
   padding-top: 1px;
 }
-
-.services-content {
+.services .title {
+  margin-top: 130px;
+  margin-bottom: -80px;
+}
+.services .services-content {
   width: 100%;
   /* height: 99vh; */
   margin-top: 60px;
@@ -493,13 +488,7 @@ a {
   bottom: -50px;
   /* padding-bottom: -40px; */
 }
-
-.services .title {
-  margin-top: 130px;
-  margin-bottom: -80px;
-}
-
-.box {
+.services .services-content .box {
   width: 350px;
   height: 410px;
   background-color: #1e1e26;
@@ -512,26 +501,7 @@ a {
   box-sizing: border-box;
   margin: 20px 10px;
 }
-.model {
-  /* height: 200px; */
-  height: 60%;
-  max-height: 100%;
-  max-width: 100%;
-}
-.details {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 300px;
-}
-.details p {
-  font-family: calibri;
-  font-weight: bold;
-  color: #888;
-  text-align: center;
-  margin-top: 20px;
-}
-.marvel {
+.services .services-content .box .service {
   color: #888;
   font-weight: bold;
   letter-spacing: 1px;
@@ -539,34 +509,47 @@ a {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 26px;
 }
-
-/* .logo-s { */
-/* height: 60px; */
-/* } */
-.box:hover {
+.services .services-content .box .service-image {
+  height: 60%;
+  max-height: 100%;
+  max-width: 100%;
+}
+.services .services-content .box .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+.services .services-content .box .details p {
+  font-family: calibri;
+  font-weight: bold;
+  color: #888;
+  text-align: center;
+  margin-top: 20px;
+}
+.services .services-content .box:hover {
   background-color: #17171d;
   transform-style: preserve-3d;
   transform: scale(1.02);
   transition: all ease 0.3s;
 }
-.box:hover .marvel {
+.services .services-content .box:hover .service {
   color: #ff2525;
   transition: all ease 0.5s;
 }
-.box:hover .details p {
+.services .services-content .box:hover .details p {
   color: #ccc;
 }
-
 /*--responsive for mobile phone--*/
 @media (max-width: 720px) {
-  .box {
+  .services .services-content .box {
     width: 94%;
     height: 500px;
   }
-  .model {
+  .services .services-content .service-image {
     height: 250px;
   }
-  .details p {
+  .services .services-content .details p {
     font-size: 16px;
     width: 250px;
   }
