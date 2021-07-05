@@ -665,6 +665,10 @@ a {
   margin-left: auto;
   margin-right: auto;
   text-align: left;
+  color: #fff;
+  font-size: medium;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-top: 30px;
 }
 
 input[type="text"],
@@ -678,14 +682,14 @@ textarea {
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 10px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: none; /* Allow the user to vertically resize the textarea (not horizontally) */
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.contact .container-right .contact-form .form-label {
+/* .contact .container-right .contact-form .form-label {
   color: #fff;
   font-size: 15px;
-}
+} */
 
 /* Style the submit button with a specific background color etc */
 input[type="submit"] {
@@ -733,9 +737,9 @@ input[type="submit"]:hover {
   background: none;
   border: none;
   border-bottom: 1px solid #666;
-  color: #888;
-  font-size: 14px;
-  text-transform: uppercase;
+  color: #ccc;
+  font-size: 16px;
+  /* text-transform: uppercase; */
   outline: none;
   transition: border-color 0.2s;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -745,4 +749,8 @@ input[type="submit"]:hover {
 }
 .form-input:focus {
   border-bottom-color: #006c67;
+}
+.contact-form .text {
+  color: red;
+  font-size: 40px;
 }
