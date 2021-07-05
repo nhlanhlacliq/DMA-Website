@@ -260,19 +260,21 @@
                         </div>
 
                         <div class="container-right" >
-                            <form class="contact-form" action="php/contact.php" method="POST">
+                            <!-- https://github.com/toperkin/staticFormEmails/blob/master/README.md -->
+                            <!-- https://docs.google.com/forms/d/e/1FAIpQLSdowFlMQe3z_QXQu6F1XZUUli3eAe2gzhi0lxDo1xFW2dBjqg/viewform?usp=pp_url&entry.1039396526=Nhlanhla+Masuku&entry.1423734644=nhlatha753@gmail.com&entry.1940479554=0844900875&entry.1065258536=Hello+Hello+Hello -->
+                            <form class="contact-form" name="contact-form" id="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSdowFlMQe3z_QXQu6F1XZUUli3eAe2gzhi0lxDo1xFW2dBjqg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
                         
                                 <!-- <label for="name" class="form-label">Name</label> -->
-                                <input class="form-input" type="text" id="name" name="name" placeholder="Your  name"><br>
+                                <input class="form-input" type="text" id="entry.1039396526" name="entry.1039396526" placeholder="Your  name"><br>
                                 
                                 <!-- <label for="email" class="form-label">Email</label> -->
-                                <input class="form-input" type="text" id="email" name="email" placeholder="Email  adress"><br>
+                                <input class="form-input" type="text" id="entry.1423734644" name="entry.1423734644" placeholder="Email  adress"><br>
                                 
                                 <!-- <label for="number" class="form-label">Number</label> -->
-                                <input class="form-input" type="text" id="number" name="number" placeholder="Phone  number"><br>
+                                <input class="form-input" type="text" id="entry.1940479554" name="entry.1940479554" placeholder="Phone  number"><br>
                                 
                                 <!-- <label for="message" class="form-label">Message</label> -->
-                                <textarea class="form-input" type="text" id="message" name="message" placeholder="How can we help you?" style="height:100px"></textarea><br>
+                                <textarea class="form-input" type="text" id="entry.1065258536" name="entry.1065258536" placeholder="How can we help you?" style="height:100px"></textarea><br>
                                 
                                 <input type="submit" value="Submit">
                             
@@ -290,6 +292,14 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.validate.min.js"></script>
         <script src="js/main.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script type="text/javascript">var submitted=false;</script>
+        <script type="text/javascript">
+        $('#contact-form').on('submit', function(e) {
+        $('#contact-form *').fadeOut(2000);
+        $('#contact-form').prepend('Your message has been sent!');
+        });
+        </script>
 
 
 </body>
