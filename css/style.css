@@ -698,86 +698,16 @@ input[type="submit"]:hover {
 }
 
 /*--responsive for mobile phone--*/
-@media (max-width: 375px) {
-  html,
-  body {
-    margin: 0px;
-    padding: 0px;
-    height: 99vh;
-  }
+@media (min-width: 320px) {
   .max-width {
-    max-width: 100%;
     padding: 0 1px;
-    margin: auto;
   }
-
-  /* Global styling for similar items */
-  .about .about-content,
-  .services .services-content,
-  .contact .contact-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-  }
-  section .title {
-    position: relative;
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 600;
-    text-shadow: 0px 4px 5px #666;
-  }
-  section .title::after {
-    position: absolute;
-    bottom: -8px;
-    left: 50%;
-    font-size: 19px;
-    color: #12191e;
-    padding: 0 5px;
-    background: #fff;
-    transform: translateX(-50%);
-    text-shadow: 0px 0px 0px #fff;
-  }
-
   /* Navigation Bar ====================================================================*/
-  .navigation {
-    position: fixed;
-    width: 100%;
-    font-family: "Ubuntu", sans-serif;
-    transition: all 0.3s ease;
-    z-index: 1;
-    background-color: rgba(255, 255, 255, 1);
-    mix-blend-mode: difference;
-    backdrop-filter: blur(42px);
-  }
   .navigation .max-width {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     width: 98%;
   }
   .navigation .logo a img {
     height: 80px;
     filter: drop-shadow(0px 2px 1px #ccc);
-  }
-  .navigation .menu li {
-    list-style: none;
-    display: inline-block;
-  }
-  .navigation .menu li a {
-    text-decoration: none;
-    color: #fff;
-    text-shadow: 0px 3px 3px #666;
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 25px;
-    transition: color 0.3s ease;
-    mix-blend-mode: difference;
-  }
-  .navigation .menu li a:hover {
-    color: #5d7f98;
   }
 }
