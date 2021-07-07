@@ -208,9 +208,13 @@ section .title::after {
   color: #fff;
   border: 3px solid #fff;
 }
-.social a {
+.home .home-content .social .whatsapp {
   text-decoration: none;
-  color: #999;
+  color: #25d366;
+}
+.home .home-content .social .facebook {
+  text-decoration: none;
+  color: #4267b2;
 }
 .social i {
   padding: 13px 20px;
