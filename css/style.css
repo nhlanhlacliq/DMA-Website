@@ -216,12 +216,12 @@ section .title::after {
   text-decoration: none;
   color: #4267b2;
 }
-.social i {
+.home .home-content .social i {
   padding: 13px 20px;
   font-size: 27px;
 }
-.fa-facebook:hover,
-.fa-whatsapp:hover {
+.home .home-content .social .fa-facebook:hover,
+.home .home-content .social .fa-whatsapp:hover {
   color: #fff;
 }
 
