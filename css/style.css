@@ -227,7 +227,7 @@ section .title::after {
 
 /* About section ====================================================================*/
 .about {
-  padding: 100px 0;
+  padding: 85px 0;
   background: #fff;
   display: flex;
   height: 70vh;
@@ -485,7 +485,7 @@ section .title::after {
   padding-top: 1px;
 }
 .services .title {
-  margin-top: 130px;
+  margin-top: 115px;
   margin-bottom: -80px;
 }
 .services .services-content {
@@ -578,7 +578,7 @@ section .title::after {
   margin: -1px 0 0; /* negative fixed header height */
 }
 .contact .title {
-  padding-top: 132px;
+  padding-top: 117px;
   margin-bottom: 0px;
 }
 .contact .container {
