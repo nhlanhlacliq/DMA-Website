@@ -11,7 +11,7 @@ $(document).ready(function () {
 });
 
 // Get the container element
-var linkContainer = document.getElementById("menu");
+var linkContainer = document.getElementById("menu-list");
 
 // Get all buttons with class="nav-link" inside the container
 var links = linkContainer.getElementsByClassName("nav-link");
@@ -26,11 +26,11 @@ for (var i = 0; i < links.length; i++) {
 }
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
-  var x = document.getElementById("myNavigation");
-  if (x.className === "navigation") {
-    x.className += " responsive";
-  } else {
-    x.className = "navigation";
-  }
-}
+// function myFunction() {
+//   var x = document.getElementById("myNavigation");
+//   if (x.className === "navigation") {
+//     x.className += " responsive";
+//   } else {
+//     x.className = "navigation";
+//   }
+// }

@@ -12,11 +12,11 @@ body {
   font-family: montserrat, sans-serif;
   height: 99vh;
 }
-.max-width {
+/* .max-width {
   max-width: 100%;
   padding: 0 80px;
   margin: auto;
-}
+} */
 
 /* Global styling for similar items */
 .about .about-content,
@@ -59,13 +59,22 @@ section .title::after {
   background-color: rgba(255, 255, 255, 1);
   mix-blend-mode: difference;
   backdrop-filter: blur(42px);
+  /* height: 100px; */
 }
-.navigation .max-width {
+/* .navigation .max-width {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 98%;
+} */
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* width: 10%; */
 }
+
 /* 
 .navigation ul {
   margin: 0;
@@ -80,9 +89,15 @@ section .title::after {
   color: #fff;
   filter: drop-shadow(0px 4px 1px #ccc);
 }
-.navigation .menu li {
+.navigation .menu {
   list-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+.navigation .menu li {
   display: inline-block;
+  padding: 10px 0;
 }
 .navigation .menu li a {
   text-decoration: none;
@@ -98,35 +113,45 @@ section .title::after {
 .navigation .menu li a.active {
   color: #5d7f98;
 }
+.navigation .menu-icon .menu-line {
+  width: 20px;
+  height: 3px;
+  background-color: #006c67;
+  margin-bottom: 4px;
+}
+
 /* Hide the link that should open and close the topnav on small screens */
-.navigation .icon {
+.navigation .menu-icon {
   display: none;
 }
 /* When the screen is less than 600 pixels wide, hide all menu links. Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
-  .navigation .menu a {
+  .navigation {
+    flex-direction: column;
+  }
+  .navigation .width {
+    width: 100%;
+    margin-left: 15px;
+    /* margin-top: 15px; */
+  }
+  .navigation .menu {
+    width: 100%;
     display: none;
   }
-  .navigation a.icon {
-    float: right;
+  .navigation .menu-icon {
     display: block;
-  }
-}
-/* The "responsive" class is added to the nav with JavaScript when the user clicks on the icon. 
-This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
-  .navigation.responsive {
-    position: relative;
-  }
-  .navigation.responsive a.icon {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 15px;
+    top: 15px;
+    padding-top: 24px;
   }
-  .navigation.responsive a {
-    float: none;
+  .navigation .menu .list-item {
     display: block;
-    text-align: left;
+    border-top: 1px solid #000;
+    text-align: center;
+  }
+  .navigation .menu.activ {
+    display: block;
   }
 }
 
