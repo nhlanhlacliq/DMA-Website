@@ -145,7 +145,7 @@ section .title::after {
 /* Home section ====================================================================*/
 .home {
   display: flex;
-  background: url(images/belts_blue.jpg) no-repeat;
+  background: url(../images/belts_blue.jpg) no-repeat;
   background-color: #000;
   background-attachment: fixed;
   height: 100vh;
