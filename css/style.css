@@ -282,6 +282,20 @@ section .title::after {
   color: #fff;
 }
 
+@media screen and (max-width: 600px) {
+  .home .home-content .text h1 {
+    padding-top: 15px;
+    font-size: 43px;
+  }
+  .home .home-content .text p {
+    font-size: 14px;
+  }
+  .home .home-content .text .get-in-touch {
+    font-size: 10px;
+    margin-bottom: -10px;
+  }
+}
+
 /* About section ====================================================================*/
 .about {
   padding: 85px 0;
