@@ -545,6 +545,40 @@ section .title::after {
   -webkit-animation: spin 8s linear infinite;
 }
 
+@media screen and (max-width: 600px) {
+  .about .title {
+    margin-top: 18px;
+    font-size: 35px;
+    margin-bottom: 25px;
+  }
+  .about .title::before {
+    height: 2px;
+    top: 55px;
+  }
+  .about .title::after {
+    font-size: 15px;
+    top: 46px;
+  }
+  .about .about-content .middle {
+    padding-top: 10px;
+    width: 65%;
+  }
+  .about .about-content .middle p {
+    font-size: 15px;
+    padding-bottom: 15px;
+  }
+  .about .about-content .left {
+    padding-left: 15px;
+    padding-top: 50px;
+  }
+  .about .about-content .right {
+    width: 50px;
+    transform: scale(0.5);
+    margin-left: -5%;
+    padding-right: 15px;
+  }
+}
+
 /* Sevices section ================================================================= */
 .services::before {
   content: "";
