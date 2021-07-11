@@ -293,7 +293,7 @@
               <li class="item-a">
                 <div class="box">
                   <p class="service">Diagnostics</p>
-                  <img class="service-image" src="images/work/DSC_0039.JPG" />
+                  <img class="service-image" src="images/work/DSC_0036.JPG" />
                   <div class="details">
                     <p>
                       Diagnosing and rectification of warning lamps, fault
@@ -434,5 +434,16 @@
     toggleBtn.addEventListener("click", () => {
       navList.classList.toggle("activ");
     });
+  </script>
+  <script>
+    const navbar = document.querySelector(".navigation");
+    const homepage = document.querySelector(".home");
+    window.onscroll = () => {
+      if (window.scrollY > homepage.scrollHeight + 15) {
+        navbar.classList.add("nav-home");
+      } else {
+        navbar.classList.remove("nav-home");
+      }
+    };
   </script>
 </html>

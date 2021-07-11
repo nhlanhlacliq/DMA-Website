@@ -92,7 +92,7 @@
   text-indent: -999em;
   width: 8px;
   position: relative;
-  z-index: 99;
+  z-index: 0;
   -webkit-transition: all 0.5s linear 0s;
   transition: all 0.5s linear 0s;
 }
@@ -161,11 +161,13 @@
   background-image: url("../img/controls.png");
   cursor: pointer;
   position: absolute;
-  z-index: 99;
+  z-index: 0;
   margin-top: -16px;
   opacity: 0.5;
   -webkit-transition: opacity 0.35s linear 0s;
   transition: opacity 0.35s linear 0s;
+  filter: invert(27%) sepia(34%) saturate(3046%) hue-rotate(150deg)
+    brightness(93%) contrast(101%);
 }
 .lSAction > a:hover {
   opacity: 1;
