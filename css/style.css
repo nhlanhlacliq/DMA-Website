@@ -229,7 +229,7 @@ section .title::after {
   }
 }
 
-.home .home-content .text .get-in-touch {
+.home .home-content .text .get-in-touch-button {
   margin: 20px 0px 0px;
   border: 3px solid #fdfdfd;
   border-radius: 50%;
