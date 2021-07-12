@@ -152,7 +152,7 @@ section .title::after {
   color: #ffffff;
   /* min-height: 500px; */
   background-position: 0px 93px;
-  background-size: auto;
+  background-size: cover;
   /* background-clip: border-box; */
   /* background-clip: unset; */
 }
@@ -274,15 +274,18 @@ section .title::after {
 
 @media screen and (max-width: 600px) {
   .home .home-content .text h1 {
-    padding-top: 15px;
+    padding-top: 42px;
     font-size: 43px;
+    margin-bottom: -10px;
   }
   .home .home-content .text p {
     font-size: 14px;
   }
-  .home .home-content .text .get-in-touch {
-    font-size: 10px;
-    margin-bottom: -10px;
+  .home .home-content .text .get-in-touch-button {
+    /* font-size: 10px; */
+    transform: scale(0.6);
+    margin-top: -20px;
+    margin-bottom: -50px;
   }
 }
 
