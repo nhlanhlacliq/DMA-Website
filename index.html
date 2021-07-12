@@ -440,7 +440,7 @@
     const logo = document.querySelector(".logo-img");
     const homepage = document.querySelector(".home");
     window.onscroll = () => {
-      if (window.scrollY > homepage.scrollHeight) {
+      if (window.scrollY > homepage.scrollHeight - 20) {
         navbar.classList.add("nav-home");
         logo.classList.add("scrolled");
         menuicon.classList.add("activ");
@@ -450,5 +450,15 @@
         menuicon.classList.remove("activ");
       }
     };
+  </script>
+  <script>
+    var navlinkcontainer = document.getElementById("menu-list");
+    var links = navlinkcontainer.getElementsByClassName("nav-link");
+
+    for (var i = 0; i < links.length; i++) {
+      links[i].addEventListener("click", function () {
+        navList.classList.toggle("activ");
+      });
+    }
   </script>
 </html>
