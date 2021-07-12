@@ -290,8 +290,8 @@ section .title::after {
   }
   .home .home-content .text .get-in-touch {
     border-radius: 50%;
-    height: 5em;
-    width: 5em;
+    height: 8em;
+    width: 8em;
     font-size: 8px;
     margin-top: -20px;
     margin-bottom: -50px;
