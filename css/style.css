@@ -234,12 +234,15 @@ section .title::after {
     border: 3px solid white;
   }
 }
-
+.home .home-content .text .get-in-touch-button {
+  /* word-spacing: 500px; */
+  /* text-align: center; */
+}
 .home .home-content .text .get-in-touch {
   margin: 20px 0px 0px;
   border: 3px solid #fdfdfd;
   border-radius: 50%;
-  line-height: 850%;
+  line-height: -5px;
   background-color: transparent;
   color: #ffffff;
   font-size: 15px;
@@ -253,6 +256,11 @@ section .title::after {
   animation-name: heartFadeInOut;
   animation-iteration-count: infinite;
   animation-duration: 1.66s;
+  height: 7em;
+  width: 7em;
+  /* white-space: normal; */
+  /* text-align: center; */
+  padding-top: -10px;
 }
 .home .home-content .text .get-in-touch:hover {
   animation-name: none;
@@ -292,17 +300,14 @@ section .title::after {
     font-size: 14px;
   }
   .home .home-content .text .get-in-touch-button {
-    transform: scale(0.6);
+    /* transform: scale(0.6); */
   }
   .home .home-content .text .get-in-touch {
-    border-radius: 50%;
-    height: 8em;
     width: 8em;
+    height: 8em;
     font-size: 8px;
     margin-top: -20px;
     margin-bottom: -50px;
-    line-height: 850%;
-    text-align: center;
   }
 }
 
