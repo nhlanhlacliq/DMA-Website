@@ -143,6 +143,9 @@ section .title::after {
   .navigation .menu.activ {
     display: block;
   }
+  .navigation .menu-icon.activ {
+    padding-top: 2px;
+  }
 }
 
 /* Home section ====================================================================*/

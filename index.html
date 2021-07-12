@@ -440,15 +440,18 @@
   </script>
   <script>
     const navbar = document.querySelector(".navigation");
+    const menuicon = document.querySelector(".menu-icon");
     const logo = document.querySelector(".logo-img");
     const homepage = document.querySelector(".home");
     window.onscroll = () => {
       if (window.scrollY > homepage.scrollHeight) {
         navbar.classList.add("nav-home");
         logo.classList.add("scrolled");
+        menuicon.classList.add("activ");
       } else {
         navbar.classList.remove("nav-home");
         logo.classList.remove("scrolled");
+        menuicon.classList.remove("activ");
       }
     };
   </script>
