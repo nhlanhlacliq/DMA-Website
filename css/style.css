@@ -287,11 +287,11 @@ section .title::after {
   }
   .home .home-content .text .get-in-touch-button {
     transform: scale(0.6);
-    height: 40em;
-    width: 40em;
   }
   .home .home-content .text .get-in-touch {
     border-radius: 50%;
+    height: 1em;
+    width: 1em;
     font-size: 8px;
     margin-top: -20px;
     margin-bottom: -50px;
