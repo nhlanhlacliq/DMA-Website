@@ -439,7 +439,7 @@
     const navbar = document.querySelector(".navigation");
     const homepage = document.querySelector(".home");
     window.onscroll = () => {
-      if (window.scrollY > homepage.scrollHeight + 15) {
+      if (window.scrollY > homepage.scrollHeight) {
         navbar.classList.add("nav-home");
       } else {
         navbar.classList.remove("nav-home");
