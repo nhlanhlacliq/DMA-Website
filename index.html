@@ -33,7 +33,7 @@
         <div class="width">
           <div class="logo">
             <a href="#home" class="nav-logo"
-              ><img src="images/DMA_NewLogo.png"
+              ><img class="logo-img" src="images/DMA_NewLogo.png"
             /></a>
           </div>
         </div>
@@ -440,12 +440,15 @@
   </script>
   <script>
     const navbar = document.querySelector(".navigation");
+    const logo = document.querySelector(".logo-img");
     const homepage = document.querySelector(".home");
     window.onscroll = () => {
       if (window.scrollY > homepage.scrollHeight) {
         navbar.classList.add("nav-home");
+        logo.classList.add("scrolled");
       } else {
         navbar.classList.remove("nav-home");
+        logo.classList.remove("scrolled");
       }
     };
   </script>
