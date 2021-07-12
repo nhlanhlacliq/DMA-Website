@@ -229,7 +229,7 @@ section .title::after {
   }
 }
 
-.home .home-content .text .get-in-touch-button {
+.home .home-content .text .get-in-touch {
   margin: 20px 0px 0px;
   border: 3px solid #fdfdfd;
   border-radius: 50%;
@@ -285,7 +285,8 @@ section .title::after {
   .home .home-content .text p {
     font-size: 14px;
   }
-  .home .home-content .text .get-in-touch-button {
+  .home .home-content .text .get-in-touch {
+    /* border-radius: 50%; */
     /* font-size: 10px; */
     transform: scale(0.6);
     margin-top: -20px;
@@ -299,7 +300,7 @@ section .title::after {
   background: #fff;
   display: flex;
   height: 70vh;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   /* grid-template-columns: 15% auto 15%; */
   /* grid-template-rows: 8px auto 12px; */
 }
