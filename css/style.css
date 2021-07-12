@@ -299,15 +299,16 @@ section .title::after {
   .home .home-content .text p {
     font-size: 14px;
   }
-  .home .home-content .text .get-in-touch-button {
-    /* transform: scale(0.6); */
-  }
   .home .home-content .text .get-in-touch {
     width: 8em;
     height: 8em;
     font-size: 8px;
     margin-top: -20px;
     margin-bottom: -50px;
+  }
+  .home .home-content .social i {
+    margin-top: 20px;
+    /* padding: 20px 20px; */
   }
 }
 
