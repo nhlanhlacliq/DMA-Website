@@ -426,6 +426,7 @@
       });
     </script>
   </body>
+  <!-- Menu open/close -->
   <script>
     const toggleBtn = document.getElementById("menu-toggle");
     const navList = document.getElementById("menu-list");
@@ -434,6 +435,7 @@
       navList.classList.toggle("activ");
     });
   </script>
+  <!-- Change nav color, logo size & menu icon position -->
   <script>
     const navbar = document.querySelector(".navigation");
     const menuicon = document.querySelector(".menu-icon");
@@ -451,6 +453,7 @@
       }
     };
   </script>
+  <!-- close menu when link clicked, scroll down -->
   <script>
     var navlinkcontainer = document.getElementById("menu-list");
     var links = navlinkcontainer.getElementsByClassName("nav-link");
@@ -458,6 +461,7 @@
     for (var i = 0; i < links.length; i++) {
       links[i].addEventListener("click", function () {
         navList.classList.toggle("activ");
+        // window.scrollBy(0, 200);
       });
     }
   </script>
