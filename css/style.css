@@ -816,8 +816,19 @@ section .title::after {
   align-items: flex-start;
   margin-left: 15%;
 }
-.contact .container .container-left .information .my-cellphone,
+@keyframes pulse {
+  0% {
+    color: #fff;
+  }
+  50% {
+    color: #999;
+  }
+  100% {
+    color: #fff;
+  }
+}
 .contact .container .container-left .information .my-email,
+.contact .container .container-left .information .my-cellphone,
 .contact .container .container-left .information .my-location {
   margin-top: auto;
   font-size: 18px;
@@ -825,15 +836,23 @@ section .title::after {
   margin-bottom: 10%;
   align-self: left;
 }
-.contact .container .container-left .information .my-cellphone a,
 .contact .container .container-left .information .my-email a,
+.contact .container .container-left .information .my-cellphone a,
 .contact .container .container-left .information .my-location a {
   color: #999;
   text-decoration: none;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  animation: pulse 3s infinite;
 }
-.contact .container .container-left .information .my-cellphone a:hover,
+.contact .container .container-left .information .my-cellphone a {
+  animation: pulse 3s 1s infinite;
+}
+.contact .container .container-left .information .my-location a {
+  animation: pulse 3s 2s infinite;
+}
+
 .contact .container .container-left .information .my-email a:hover,
+.contact .container .container-left .information .my-cellphone a:hover,
 .contact .container .container-left .information .my-location a:hover {
   color: #fff;
 }
