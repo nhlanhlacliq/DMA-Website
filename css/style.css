@@ -952,10 +952,11 @@ input[type="submit"]:hover {
   }
   input[type="submit"] {
     background-color: #006c67;
+    background-color: #ff2525;
     color: white;
     padding: 12px 20px;
     border: none;
-    border-radius: 2px;
+    /* border-radius: 2px; */
     cursor: none;
   }
 }
