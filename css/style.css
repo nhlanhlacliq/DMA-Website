@@ -234,6 +234,44 @@ section .title::after {
     border: 3px solid white;
   }
 }
+@keyframes heartFadeInOutMobile {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    color: white;
+    border: 2px solid pink;
+  }
+  35% {
+    transform: scale(0.998);
+    color: #ffe0e5;
+    border: 2px solid #ffe0e5;
+  }
+  45% {
+    transform: scale(1.002);
+    color: #ff2525;
+    border: 2px solid #ff2525;
+  }
+  55% {
+    transform: scale(0.998);
+    color: pink;
+    border: 2px solid pink;
+  }
+  65% {
+    transform: scale(1.002);
+    color: #ff2525;
+    border: 2px solid #ff2525;
+  }
+  75% {
+    color: #ffe0e5;
+    border: 2px solid #ffe0e5;
+  }
+  100% {
+    transform: scale(1);
+    color: white;
+    border: 2px solid white;
+  }
+}
 .home .home-content .text .get-in-touch-button {
   /* word-spacing: 500px; */
   /* text-align: center; */
@@ -300,11 +338,13 @@ section .title::after {
     font-size: 14px;
   }
   .home .home-content .text .get-in-touch {
+    border: 2px solid #fdfdfd;
     width: 8em;
     height: 8em;
     font-size: 8px;
     margin-top: -20px;
     margin-bottom: -50px;
+    animation-name: heartFadeInOutMobile;
   }
   .home .home-content .social i {
     margin-top: 20px;
@@ -890,5 +930,13 @@ input[type="submit"]:hover {
     width: auto;
     border-top-right-radius: 0;
     border-bottom-left-radius: 0;
+  }
+  input[type="submit"] {
+    background-color: #006c67;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: none;
   }
 }
