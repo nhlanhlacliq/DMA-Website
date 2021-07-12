@@ -287,9 +287,11 @@ section .title::after {
   }
   .home .home-content .text .get-in-touch-button {
     transform: scale(0.6);
+    height: 40em;
+    width: 40em;
   }
   .home .home-content .text .get-in-touch {
-    border-radius: 100%;
+    border-radius: 50%;
     font-size: 8px;
     margin-top: -20px;
     margin-bottom: -50px;
@@ -680,7 +682,7 @@ section .title::after {
 /*--responsive for mobile phone--*/
 @media (max-width: 720px) {
   .services {
-    margin-top: 100px;
+    margin-top: 120px;
     margin-bottom: -180px;
   }
   .services .title {
