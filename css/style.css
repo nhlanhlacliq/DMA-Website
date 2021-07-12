@@ -274,7 +274,7 @@ section .title::after {
 
 @media screen and (max-width: 600px) {
   .home {
-    background-size: contain;
+    background-size: cover;
   }
   .home .home-content .text h1 {
     padding-top: 42px;
