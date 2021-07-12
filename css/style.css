@@ -295,6 +295,8 @@ section .title::after {
     font-size: 8px;
     margin-top: -20px;
     margin-bottom: -50px;
+    line-height: 850%;
+    text-align: center;
   }
 }
 
